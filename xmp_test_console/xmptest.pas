@@ -1,5 +1,7 @@
 program xmptest;
 
+// by Fred vS | fiens@hotmail.com | 2024
+
 {$mode objfpc}{$H+}
 {$PACKRECORDS C}
 
