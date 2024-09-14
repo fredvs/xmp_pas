@@ -26,7 +26,7 @@ const
  {$ENDIF}
 
 const
-  XMP_NAME_SIZE     = 64; // Taille du nom du module et type
+  XMP_NAME_SIZE     = 64;
 
   // Note event constants
   XMP_KEY_OFF       = $81;
@@ -120,9 +120,9 @@ type
 
 type
   xmp_channel = record
-    pan: integer;   // Pan de canal (0x80 pour centre)
-    vol: integer;   // Volume du canal
-    flg: integer;   // Flags du canal
+    pan: integer;   // Pan de canal (0x80 centrum)
+    vol: integer;   // Volume of canal
+    flg: integer;   // Flags of canal
   end;
 
   xmp_pattern = record
@@ -386,15 +386,12 @@ end;
 
 Procedure xmp_Unload;
 begin
-// < Reference counting
   if ReferenceCounter > 0 then
     dec(ReferenceCounter);
   if ReferenceCounter > 0 then
     exit;
-  // >
   if xmp_IsLoaded then
   begin
-    // xmp_Terminate();
     DynLibs.UnloadLibrary(xmp_Handle);
     xmp_Handle:=DynLibs.NilHandle;
   end;

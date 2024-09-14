@@ -111,12 +111,10 @@ end;
 
 procedure as_Unload();
 begin
-  // < Reference counting
-  if ReferenceCounter > 0 then
+   if ReferenceCounter > 0 then
     Dec(ReferenceCounter);
   if ReferenceCounter < 0 then
     Exit;
-  // >
   if as_IsLoaded then
   begin
     DynLibs.UnloadLibrary(as_Handle);
