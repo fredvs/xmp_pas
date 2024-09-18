@@ -1032,7 +1032,7 @@ sigsettings=27
  30,30,T,F
 defaultmake=1
 [breakpoints]
-on=33
+on=31
  -1
  -1
  -1
@@ -1064,9 +1064,7 @@ on=33
  -1
  -1
  -1
- -1
- -1
-path=33
+path=31
  
  
  
@@ -1098,9 +1096,7 @@ path=33
  
  
  
- 
- 
-line=33
+line=31
  0
  0
  0
@@ -1132,9 +1128,9 @@ line=33
  0
  0
  0
+address=31
  0
  0
-address=33
  0
  0
  0
@@ -1164,11 +1160,11 @@ address=33
  0
  0
  0
+addbkpt=31
  0
  0
  0
  0
-addbkpt=33
  0
  0
  0
@@ -1196,13 +1192,13 @@ addbkpt=33
  0
  0
  0
+ignore=31
  0
  0
  0
  0
  0
  0
-ignore=33
  0
  0
  0
@@ -1228,17 +1224,7 @@ ignore=33
  0
  0
  0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
- 0
-condition=33
- 
- 
+condition=31
  
  
  
@@ -1301,8 +1287,13 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=200
-finddtext=SND_PCM_FORMAT_U8
+finddtext=gme_track_ended
 findhistory=20
+ gme_track_ended
+ gme_delete
+ gme_track_info
+ gme_open_file
+ gme_
  SND_PCM_FORMAT_U8
  'libxmp.dll'
  process
@@ -1318,14 +1309,9 @@ findhistory=20
  keyb2pb
  keyb3pb
  aimage
- loadimagetag
- loadimage
- keyb1
- param
- inotag
 findoptions=1
 editpos=1
- 17,237
+ 29,250
 bookmarks0=0
 sourcefiles=1
  ${PROJECTDIR}/xmptest.pas
@@ -1355,13 +1341,13 @@ windowlayout=540
  ny=0
  ncx=0
  ncy=0
- x=5
- y=87
- cx=1430
+ x=82
+ y=113
+ cx=1235
  cy=707
  rcx=0
  rcy=0
- wsize=0
+ wsize=6
  active=1
  visible=1
  [findmessagefo.findtext]
@@ -1484,18 +1470,18 @@ windowlayout=540
  ncy=0
  x=0
  y=0
- cx=205
- cy=512
+ cx=61
+ cy=624
  rcx=0
  rcy=0
  [projecttreefo.grid]
- propcolwidthref=88
+ propcolwidthref=1
  width0=117
  sortdescend0=0
- width1=86
+ width1=1
  sortdescend1=0
  sorted=0
- col=0
+ col=1
  row=2
  rowheight=17
  [stackfo]
@@ -1671,9 +1657,9 @@ windowlayout=540
  ncx=0
  ncy=0
  x=0
- y=576
- cx=1417
- cy=108
+ y=688
+ cx=1427
+ cy=132
  rcx=0
  rcy=0
  [componentstorefo]
@@ -1772,7 +1758,7 @@ windowlayout=540
  ncy=0
  x=0
  y=0
- cx=1417
+ cx=1427
  cy=58
  rcx=0
  rcy=0
@@ -1784,11 +1770,11 @@ windowlayout=540
  mdistate=0
  nx=0
  ny=0
- ncx=1417
+ ncx=1427
  ncy=61
  x=0
  y=0
- cx=1417
+ cx=1427
  cy=61
  rcx=0
  rcy=0
@@ -1799,28 +1785,28 @@ windowlayout=540
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/Downloads/fpalsa-1.0.27.2.fp0/src/pcm.inc
+ value=/home/fred/xmp_test/xmptest.pas
  history=20
-  /home/fred/Downloads/fpalsa-1.0.27.2.fp0/src/pcm.inc
-  /home/fred/xmp_test/alsa_min.pas
   /home/fred/xmp_test/xmptest.pas
+  /home/fred/gme_pas_work/gme_test_console/gmetest.pas
+  /home/fred/Downloads/project1_gme_win_lin/gme.pas
+  /home/fred/Downloads/project1_gme_win_lin/unit1.pas
+  /home/fred/Downloads/project1_xmp_win_lin/unit1.pas
+  /home/fred/Downloads/project1_xmp_win_lin/project1.lpr
+  /home/fred/uos_xmp/examples/uos_libxmp.pas
   /home/fred/xmp_test/libxmp.pas
+  /home/fred/tron/project1_gme_win_lin/gme.pas
+  /home/fred/uos_xmp/examples/main_sp.pas
+  /home/fred/tron/project1_gme_win_lin/project1.lpr
+  /home/fred/tron/project1/gme.pas
+  /home/fred/tron/project1/unit1.pas
+  /home/fred/tron/project1/project1.prj
+  /home/fred/tron/project1/project1.lpr
+  /home/fred/uos/src/uos_libsndfile.pas
+  /home/fred/uos/src/uos_portaudio.pas
   /home/fred/xmp_test/xmptest.prj
   /home/fred/Downloads/apngopt-1.4-src/apngopt.cpp
   /home/fred/SimpleWebStreamer/uos_soundtouch.pas
-  /home/fred/strumpract_work/src/msefiledialogx.pas
-  /home/fred/strumpract/src/msefiledialogx.pas
-  /home/fred/strumpract/src/splash.pas
-  /home/fred/strumpract/src/uos_flat.pas
-  /home/fred/strumpract/src/infosd.pas
-  /home/fred/SimpleWebStreamer/uos.pas
-  /home/fred/SimpleWebStreamer/uos_httpgetthread.pas
-  /home/fred/SimpleWebStreamer/uos_define.inc
-  /home/fred/SimpleWebStreamer/simplewebplayer.prj
-  /home/fred/SimpleWebStreamer/simplewebplayer.pas
-  /home/fred/strumpract/src/drums.pas
-  /home/fred/strumpract/src/waveform.pas
-  /home/fred/Downloads/sinewave/sine.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1835,10 +1821,10 @@ windowlayout=540
  ny=0
  ncx=0
  ncy=0
- x=208
+ x=64
  y=0
- cx=1209
- cy=512
+ cx=1363
+ cy=624
  rcx=0
  rcy=0
  [sourcefo.files_tab]
@@ -1878,8 +1864,8 @@ windowlayout=540
  ncy=0
  x=0
  y=61
- cx=1417
- cy=512
+ cx=1427
+ cy=624
  rcx=0
  rcy=0
 [targetconsole]

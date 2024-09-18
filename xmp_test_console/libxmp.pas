@@ -8,8 +8,7 @@ unit libxmp;
 interface
 
 uses
-  dynlibs,
-  CTypes;
+  dynlibs;
 
 const
   XMP_VERSION     = '4.6.0';
@@ -19,11 +18,17 @@ const
   XMP_VER_RELEASE = 0;
 
 const
- {$IFDEF windows}
+{$IFDEF windows}
   XMP_LIB_NAME = 'libxmp.dll'; 
+{$ENDIF}
+ 
+{$IFDEF unix} 
+ {$IFDEF macos}
+  XMP_LIB_NAME = 'libxmp.dylib'; 
  {$ELSE}
   XMP_LIB_NAME    = 'libxmp.so.4.6.0';
  {$ENDIF}
+{$ENDIF}
 
 const
   XMP_NAME_SIZE     = 64;
